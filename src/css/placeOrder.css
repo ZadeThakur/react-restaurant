@@ -7,8 +7,16 @@
   width:100%;
   margin-bottom: 10px;
   text-align: center;
-  vertical-align: middle;
 }
+#costDiv{
+  text-align: center;
+}
+
+#costDiv div{
+    padding-top: 1.5px;
+    vertical-align: middle;
+}
+
 #inputQuantity{
   width: 100%;
 }

@@ -140,7 +140,7 @@ class PlaceOrder extends React.Component{
               <label><h5>BEEF-VINDALOO</h5></label>
             </div>
             </div>
-            <div>
+            <div id ="costDiv">
             <div><h4>Costs</h4></div>
               <div><h5>$10</h5></div>
               <div><h5>$20</h5></div>
