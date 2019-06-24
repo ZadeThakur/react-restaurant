@@ -1,0 +1,27 @@
+.flex-container{
+  display:flex;
+  width: 100%;
+  height: 100%;
+}
+.flex-container div{
+  width:100%;
+  margin-bottom: 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+#inputQuantity{
+  width: 100%;
+}
+#inputQuantity input{
+  width: 50%;
+  height: 100;
+  padding: 1px;
+  border: 1px solid #eee3e7;
+}
+#buttonDiv{
+  text-align: center;
+}
+#billDiv{
+  width: 100%;
+  word-spacing: 1em;
+}
