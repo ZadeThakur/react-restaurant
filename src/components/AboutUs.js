@@ -40,7 +40,7 @@ const styles = theme =>({
       fontSize: "225%"
     },
     [theme.breakpoints.up('lg')]:{
-      fontSize: "225%"
+      fontSize: "190%"
     },
   },
   para:{
@@ -51,7 +51,7 @@ const styles = theme =>({
       fontSize: "150%"
     },
     [theme.breakpoints.up('lg')]:{
-      fontSize: "150%"
+      fontSize: "120%"
     },
   },
 });
