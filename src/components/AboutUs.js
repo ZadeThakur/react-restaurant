@@ -32,26 +32,36 @@ const styles = theme =>({
   },
   heading :{
     textDecoration: "underline",
-    lineHeight:"150%",
-    [theme.breakpoints.down('sm')]:{
-      fontSize: "95%"
+    lineHeight:"125%",
+    [theme.breakpoints.between("xs","sm")]:{
+      lineHeight:"100%",
+      fontSize: "100%"
     },
-    [theme.breakpoints.only('md')]:{
+    [theme.breakpoints.between("sm","md")]:{
+      lineHeight:"125%",
+      fontSize: "110%"
+    },
+    [theme.breakpoints.between('md','lg')]:{
       fontSize: "225%"
     },
-    [theme.breakpoints.up('lg')]:{
+    [theme.breakpoints.between('lg','xl')]:{
       fontSize: "190%"
     },
   },
   para:{
-    [theme.breakpoints.down('sm')]:{
-      fontSize: "80%",
+    [theme.breakpoints.between("xs","sm")]:{
+      lineHeight:"110%",
+      fontSize: "73%"
     },
-    [theme.breakpoints.only('md')]:{
-      fontSize: "150%"
+    [theme.breakpoints.between("sm","md")]:{
+      lineHeight:"120%",
+      fontSize: "110%",
     },
-    [theme.breakpoints.up('lg')]:{
-      fontSize: "120%"
+    [theme.breakpoints.between('md','lg')]:{
+      fontSize: "180%"
+    },
+    [theme.breakpoints.between('lg','xl')]:{
+      fontSize: "140%"
     },
   },
 });
