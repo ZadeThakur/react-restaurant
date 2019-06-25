@@ -79,14 +79,14 @@ const AboutUs = (props) =>{
               <h2 className={classes.heading}>Indian Food for Takeout, Delivery and Dine-in:
                   India Gate Restaurant</h2>
               <p className={classes.para}>For more than 25 years, family-owned India Gate Restaurant has been serving up fresh, authentic Indian cuisine to St. John’s and surrounding area customers. As the oldest Indian restaurant in the area, we’ve been successful because of our commitment to serving the consistently fresh and high quality Indian fare. Our expansive menu features something for everyone, whether they’re new to Indian food or seasoned veterans. Enjoy perfectly cook lamb dishes, tandoori chicken, our always popular naan bread and much, much more. </p>
-              <p className={classes.para}>Hours of Operation</p>
+              <p className={classes.heading}>Hours of Operation</p>
               <p className={classes.para}>Lunch Buffet:<br></br>
               Wednesday, Thursday and Friday<br></br>
               11:30 AM – 1:30 PM</p>
               <p className={classes.para}>Dinner Hours:<br></br>
               Tuesday to Sunday <br></br>
               5 PM – 9:30 PM</p>
-              <p className={classes.para}>Contact Information</p>
+              <p className={classes.heading}>Contact Information</p>
               <p className={classes.para}>286 Duckworth St<br></br>
               St John's, NL A1C 1H3</p>
               </div>
