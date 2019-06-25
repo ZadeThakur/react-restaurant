@@ -75,13 +75,12 @@ class PlaceOrder extends React.Component{
           temp = parseInt(temp,10);
           return(
             <div id="billDiv" key={input.name}>
-              <br></br>
-              <h3>
+              <h4>
               <React.Fragment>Your </React.Fragment>
               {document.querySelector(`#quantityOf${input.name}`).value}
               <React.Fragment> {input.name} Costs: $</React.Fragment>
               {document.querySelector(`#quantityOf${input.name}`).value * temp}
-              </h3>
+              </h4>
             </div>
           );
         }
@@ -97,100 +96,125 @@ class PlaceOrder extends React.Component{
           <Container fixed>
           <Header />
           <div className="flex-container">
-            <div>
-            <div><h4>Dishes</h4></div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="ALU-GOBI" id="ALU-GOBI" alt="10"></input>
-              <label><h5>ALU-GOBI</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="BUTTER-CHICKEN" id="BUTTER-CHICKEN" alt="20"></input>
-              <label><h5>BUTTER-CHICKEN</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="ROGAN-JOSH" id="ROGAN-JOSH" alt="30"></input>
-              <label><h5>ROGAN-JOSH</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="SAMOSAS" id="SAMOSAS" alt="40"></input>
-              <label><h5>SAMOSAS</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="TANDOORI-CHICKEN" id="TANDOORI-CHICKEN" alt="40"></input>
-              <label><h5>TANDOORI-CHICKEN</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="MALAI-KOFTA" id="MALAI-KOFTA" alt="30"></input>
-              <label><h5>MALAI-KOFTA</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="MASALA-CHAI" id="MASALA-CHAI" alt="20"></input>
-              <label><h5>MASALA-CHAI</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="MATAR-PANEER" id="MATAR-PANEER" alt="10"></input>
-              <label><h5>MATAR-PANEER</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="NAAN" id="NAAN" alt="20"></input>
-              <label><h5>NAAN</h5></label>
-            </div>
-            <div className="ui checkbox">
-              <input type="checkbox" name="BEEF-VINDALOO" id="BEEF-VINDALOO" alt="30"></input>
-              <label><h5>BEEF-VINDALOO</h5></label>
-            </div>
-            </div>
-            <div id ="costDiv">
-            <div><h4>Costs</h4></div>
-              <div><h5>$10</h5></div>
-              <div><h5>$20</h5></div>
-              <div><h5>$30</h5></div>
-              <div><h5>$40</h5></div>
-              <div><h5>$40</h5></div>
-              <div><h5>$30</h5></div>
-              <div><h5>$20</h5></div>
-              <div><h5>$10</h5></div>
-              <div><h5>$20</h5></div>
-              <div><h5>$30</h5></div>
-            </div>
-            <div>
-            <div><h4>Quantity</h4></div>
+            <div id="dishesDiv"><h5>Dishes</h5></div>
+            <div><h5>Costs</h5></div>
+            <div><h5>Quantity</h5></div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="ALU-GOBI" id="ALU-GOBI" alt="10"></input>
+            <label><h5>ALU-GOBI</h5></label>
+          </div>
+            <div><h5>$10</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfALU-GOBI"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="BUTTER-CHICKEN" id="BUTTER-CHICKEN" alt="20"></input>
+            <label><h5>BUTTER-CHICKEN</h5></label>
+          </div>
+            <div><h5>$20</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfBUTTER-CHICKEN"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="ROGAN-JOSH" id="ROGAN-JOSH" alt="30"></input>
+            <label><h5>ROGAN-JOSH</h5></label>
+          </div>
+            <div><h5>$30</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfROGAN-JOSH"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="SAMOSAS" id="SAMOSAS" alt="40"></input>
+            <label><h5>SAMOSAS</h5></label>
+          </div>
+            <div><h5>$40</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfSAMOSAS"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="TANDOORI-CHICKEN" id="TANDOORI-CHICKEN" alt="40"></input>
+            <label><h5>TANDOORI-CHICKEN</h5></label>
+          </div>
+            <div><h5>$40</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfTANDOORI-CHICKEN"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="MALAI-KOFTA" id="MALAI-KOFTA" alt="30"></input>
+            <label><h5>MALAI-KOFTA</h5></label>
+          </div>
+            <div><h5>$30</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfMALAI-KOFTA"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="MASALA-CHAI" id="MASALA-CHAI" alt="20"></input>
+            <label><h5>MASALA-CHAI</h5></label>
+          </div>
+            <div><h5>$20</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfMASALA-CHAI"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="MATAR-PANEER" id="MATAR-PANEER" alt="10"></input>
+            <label><h5>MATAR-PANEER</h5></label>
+          </div>
+            <div><h5>$10</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfMATAR-PANEER"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="NAAN" id="NAAN" alt="20"></input>
+            <label><h5>NAAN</h5></label>
+          </div>
+            <div><h5>$20</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfNAAN"></input>
             </div>
+          </div>
+
+          <div className="flex-container">
+          <div className="ui checkbox">
+            <input type="checkbox" name="BEEF-VINDALOO" id="BEEF-VINDALOO" alt="30"></input>
+            <label><h5>BEEF-VINDALOO</h5></label>
+          </div>
+            <div><h5>$30</h5></div>
             <div id="inputQuantity">
               <input type="text" placeholder="Quantity" id="quantityOfBEEF-VINDALOO"></input>
             </div>
-            </div>
           </div>
+
           <div id="buttonDiv">
             <button className="ui positive basic button" onClick={this.getTotal}>Show my Order</button>{this.showOrder()}
             <br></br>
-            <h2>
+            <h2 style = {{textDecoration: "underline"}}>
             Total Cost of your order:  $
             {this.state.total}
             </h2>
