@@ -50,8 +50,8 @@ const styles = theme =>({
   },
   para:{
     [theme.breakpoints.between("xs","sm")]:{
-      lineHeight:"110%",
-      fontSize: "73%"
+      lineHeight:"88%",
+      fontSize: "65%"
     },
     [theme.breakpoints.between("sm","md")]:{
       lineHeight:"120%",
